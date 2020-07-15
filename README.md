@@ -49,13 +49,7 @@ We need to pass `phrase` into our `#catch_phrase` as an argument. Let's do it:
 2. Change the test in `spec/catch_phrase_spec.rb` to match the following:
 
 ```ruby
-require "spec_helper"
-describe "#catch_phrase" do
-  it "puts out a catch phrase" do
-    phrase = "It's-a me, Mario!"
-    expect{catch_phrase(phrase)}.to output("It's-a me, Mario!\n").to_stdout
-  end
-end
+
 ```
 
 ### Part II: Understanding Method Scope
@@ -116,4 +110,3 @@ be met with a `NameError`. Our program, outside of the
 `#rescue_princess_peach`method, just doesn't know what it is.
 
 <p class='util--hide'>View <a href='https://learn.co/lessons/method-scope-lab'>Method Scope Lab</a> on Learn.co and start learning to code for free.</p>
-
